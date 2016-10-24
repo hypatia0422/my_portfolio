@@ -1,0 +1,132 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+html{
+    background-color: rgba(255,255,255,1);
+}
+body{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: rgba(255,255,255,1);
+    font-family: 'Raleway', sans-serif;
+
+}
+.container{
+    height: 100% ;
+    width: auto ;
+    margin: .25em;
+    padding: .5em;
+
+}
+
+#main{
+    background-color:rgba(210,170,168,1);
+
+}
+
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:1.5em;
+}
+q{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.25em;
+    padding: 1em;
+}
+img{
+    height:40% ;
+    width: auto;
+}
+
+#about{
+    background-color:rgba(251,250,247,1);
+
+
+}
+#resume{
+    background-color:rgba(255,243,242,1);
+
+}
+#letters{
+    background-color:rgba(255,255,255,1);
+
+}
+#project{
+    background-color:rgba(234,228,213,1);
+
+}
+#education{
+    background-image: url("images/LgEdu.jpg");
+    background-color:rgba(40,40,40,.25);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
+
+}
+#social{
+    background-color:rgba(234,228,213,1);
+
+}
+
+
+.nav {
+    background-color: #444;
+    width:100%;
+}
+.nav ul {
+    list-style: none;
+    background-color: rgba(210,170,168,1);
+    text-align: center;
+    overflow: auto;
+
+
+}
+.nav li {
+    float: left;
+    font-family: inherit;
+    font-size: 1.2em;
+    line-height: 1em;
+    border-bottom: 1px solid #888;
+    padding: 0 .25em;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+}
+
+.nav a:hover {
+    background-color: rgba(255,243,242,1);
+    color:#444;
+}
+
+.nav a:active {
+    background-color: #fff;
+    color: rgba(172, 157, 150, 1);
+    cursor: default;
+}
+
+@media screen and (min-width: 450px) {
+    .nav li {
+        display: inline;
+        width: 100%;
+        border-bottom: none;
+        height: auto;
+        line-height: 1.2em;
+        font-size: 1.4em;
+    }
+#footer{
+    background-color:rgba(255,243,242,1);
+
+}
+
+/*css for resume sheet*/
+#res_page {
+    background-color: rgba(172, 157, 150, 1);
+}
