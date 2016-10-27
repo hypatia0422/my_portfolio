@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+body{
+
+    background-color: rgba(255,255,255,1);
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Css for all containers or sections*/
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 2em .25em;
+}
+.container img{
+    width: 40%;
+    height: auto;
+    margin: .5em;
+    padding:.25em;
+
+}
+p{
+    font-size: .85em;
+}
+
+/*CSS pertaining to header section*/
+header{
+    padding: .25em;
+    margin: .5em;
+}
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2.75em;
+    font-weight: bold;
+}
+
+.userView img{
+    width:100%;
+    height: auto;
+}
+/*Css pertaining to main section container*/
+#main{
+    background-color:rgba(250,242,231,1);
+}
+
+article{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+
+}
+
+article q{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.25em;
+}
+
+#main img {
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    border-radius: 50px;
+    opacity: .87;
+}
+#main img:hover{
+    opacity: 1;
+}
+
+#main a{
+    font-size: 1.5em;
+}
+
+
+
+/*CSS pertaining to the Resume and recommendations*/
+#resume{
+    background-color:rgba(255,243,242,1);
+
+}
+#resume:hover{
+    opacity: .6;
+}
+#letters{
+    background-color:rgba(255,255,255,1);
+
+}
+
+/*CSS pertaining to my projects*/
+#project{
+    background-color:rgba(234,228,213,1);
+
+}
+#project:hover{
+    opacity: .6;
+}
+
+/*CSS pertaining to the education section*/
+#education{
+    background-image: url("images/LgEdu.jpg");
+    background-color:rgba(40,40,40,.25);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
+
+}
+#education:hover{
+    opacity: .6;
+}
+
+/*CSS based on the community and social page*/
+#social{
+    background-color:rgba(234,228,213,1);
+
+}
+#social:hover{
+    opacity: .6;
+}
+#footer{
+    background-color:rgba(255,243,242,1);
+
+}
+
+
+/*Css creating nav for each page*/
+.nav {
+    background-color: #444;
+    width:100%;
+}
+.nav ul {
+    list-style: none;
+    background-color: rgba(210,170,168,1);
+    text-align: center;
+    overflow: auto;
+
+
+}
+.nav li {
+    float: left;
+    font-family: inherit;
+    font-size: 1.2em;
+    line-height: 1em;
+    border-bottom: 1px solid #888;
+    padding: 0 .25em;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+}
+
+.nav a:hover {
+    background-color: rgba(255,243,242,1);
+    color:#444;
+}
+
+.nav a:active {
+    background-color: #fff;
+    color: rgba(172, 157, 150, 1);
+    cursor: default;
+}
+
+/*Css media queries for larger screens */
+
+@media screen and (min-width: 450px) {
+    .nav li {
+        display: inline;
+        width: 100%;
+        border-bottom: none;
+        height: auto;
+        line-height: 1.2em;
+        font-size: 1.4em;
+    }
+}
+
+/*css for resume sheet*/
+#res_page {
+    background-color: rgba(172, 157, 150, 1);
+}
