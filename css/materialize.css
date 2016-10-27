@@ -2949,9 +2949,9 @@ ul.staggered-list li {
 }
 
 footer.page-footer {
-  margin-top: 20px;
-  padding-top: 20px;
-  background-color: #ee6e73;
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+  background-color:  rgba(210,170,168,1);
 }
 
 footer.page-footer .footer-copyright {
@@ -6913,8 +6913,8 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav .userView {
   overflow: hidden;
   position: relative;
-  padding: 32px 32px 0;
-  margin-bottom: 8px;
+  padding: .7em 1em .25em 0;
+  margin-bottom: .5em;
 }
 
 .side-nav .userView a {
@@ -6940,18 +6940,18 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .side-nav .userView .circle {
-  height: 64px;
-  width: 64px;
+  height: 74px;
+  width: 74px;
 }
 
 .side-nav .userView .name,
 .side-nav .userView .email {
-  font-weight: 14px;
-  line-height: 24px;
+  font-weight: 500;
+  line-height: 1.5em;
 }
 
 .side-nav .userView .name {
-  margin-top: 16px;
+  margin-top: 1em;
   font-weight: 500;
 }
 
@@ -8116,7 +8116,7 @@ input[type=range]:focus::-ms-fill-upper {
 .picker__button--close {
   border: 1px solid #ffffff;
   background: #ffffff;
-  font-size: .8em;
+  font-size: 1em;
   padding: .66em 0;
   font-weight: bold;
   width: 33%;

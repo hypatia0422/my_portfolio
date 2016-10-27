@@ -9,6 +9,22 @@ body{
     background-color: rgba(255,255,255,1);
     font-family: 'Raleway', sans-serif;
 }
+/*css for nav */
+header nav{
+    background-color:rgba(255, 82, 82, .8);
+    font-size: 1.5em;
+    padding: .5em; /*this works up till 600px, then add media query*/
+}
+
+header nav ul#slide-out.side-nav.right-aligned li div.userView img.circle{
+    margin:.15em;
+}
+header nav ul#slide-out.side-nav.right-aligned li div.userView p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1em;
+    line-height: 1.25em;
+    margin: .25em 0;
+}
 
 /*Css for all containers or sections*/
 .container{
@@ -97,7 +113,7 @@ article q{
 
 /*CSS pertaining to my projects*/
 #project{
-    background-color:rgba(234,228,213,1);
+    background-color:rgba(109, 45, 132,.25);
 
 }
 #project:hover{
@@ -106,7 +122,6 @@ article q{
 
 /*CSS pertaining to the education section*/
 #education{
-    background-image: url("images/LgEdu.jpg");
     background-color:rgba(40,40,40,.25);
     background-size: 100% auto;
     background-repeat: no-repeat;
