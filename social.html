@@ -7,25 +7,36 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="css/screen.css" rel="stylesheet">
 	<link href="css/materialize.css" rel="stylesheet">
 	<title> My Digital Portfolio </title>
 
 </head>
 <body>
-<div class="nav">
-	<ul>
-		<li class="main"><a href="index.html">Home</a></li>
-		<li class="about"><a href="about.html">About Me</a></li>
-		<li class="resume"><a href="resume.html">Work Experience</a></li>
-		<li class="letters"><a href="resume.html">References</a></li>
-		<li class="project"><a href="projects.html">Projects</a></li>
-		<li class="education"><a href="education.html">Education</a></li>
-		<li class="social"><a href="social.html">Community/Volunteer</a></li>
+<header>
+	<nav>
+		<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">view_list</i></a>
+		<ul id="slide-out" class="side-nav">
+			<li><div class="userView">
+				<img class="background" src="images/rose.jpg">
+				<h1></h1>
+				<img class="circle" src="images/me.JPG">
+				<p>Marilyn Torres</p>
+			</div></li>
+			<li class="main"><a href="index.html">Home</a></li>
+			<li class="about"><a href="about.html">About Me</a></li>
+			<li class="resume"><a href="resume.html">Work Experience</a></li>
+			<li class="letters"><a href="resume.html">References</a></li>
+			<li class="project"><a href="projects.html">Projects</a></li>
+			<li class="education"><a href="education.html">Education</a></li>
+			<li class="social active"><a href="social.html">Community/Volunteer</a></li>
+		</ul>
+	</nav>
+</header>
 
-	</ul>
-</div>
 <p>Social Community Volunteer</p>
-
+<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
 </body>
 </html>
