@@ -146,6 +146,12 @@ article q{
 
 }
 
+/*Css for floating menu button*/
+#btn_nav .large.material-icons{
+    background-color: #444;
+    display:
+}
+
 
 /*Css creating nav for each page*/
 .nav {
