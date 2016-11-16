@@ -7,7 +7,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 body{
 
     background-color: rgba(255,255,255,1);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif !important;
 }
 /*css for nav */
 header nav{
@@ -24,6 +24,9 @@ header nav ul#slide-out.side-nav.right-aligned li div.userView p{
     font-size: 1em;
     line-height: 1.25em;
     margin: .25em 0;
+}
+i{
+    color:cadetblue;
 }
 
 /*Css for all containers or sections*/
@@ -48,6 +51,11 @@ header nav ul#slide-out.side-nav.right-aligned li div.userView p{
 p{
     font-size: .85em;
 }
+/*overall card fixes*/
+.card-title{
+    color:#CD853F !important;
+    text-shadow: 1px 1px #444;
+}
 
 /*CSS pertaining to header section*/
 header{
@@ -69,21 +77,15 @@ h1 {
     background-color:rgba(250,242,231,1);
 }
 
-article{
-    display: inline-block;
-    width: 30%;
-    height: auto;
-
-}
-
-article q{
+#main q{
     font-family: 'Dancing Script', cursive;
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 #main img {
-    display: inline-block;
-    width: 50%;
+    /*display: inline-block;*/
+    padding: .5em .5em;
+    width: 100%;
     height: auto;
     border-radius: 50px;
     opacity: .87;
@@ -91,12 +93,6 @@ article q{
 #main img:hover{
     opacity: 1;
 }
-
-#main a{
-    font-size: 1.5em;
-}
-
-
 
 /*CSS pertaining to the Resume and recommendations*/
 #resume{
@@ -149,7 +145,7 @@ article q{
 /*Css for floating menu button*/
 #btn_nav .large.material-icons{
     background-color: #444;
-    display:
+
 }
 
 
@@ -206,7 +202,113 @@ article q{
     }
 }
 
+/*css for the about me page*/
+#about_page{
+    background-color:rgba(169,93,41,.25) ;
+}
+
+#about h1{
+    text-align:right;
+    margin: -1em 1em .5em 1em;
+}
+#about img{
+    width: 25%;
+    height: auto;
+    float: right;
+    margin: 1em;
+
+    border-style: solid;
+    border-color: cadetblue;
+    border-width: medium;
+}
+#about article{
+     margin: .5em;
+ }
+#about article q{
+    display: block;
+    margin: .5em;
+    font-family: 'Dancing script', cursive;
+    font-size: 1.5em;
+    color: cadetblue;
+
+}
+#about section{
+    margin: .75em;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
 /*css for resume sheet*/
 #res_page {
-    background-color: rgba(172, 157, 150, 1);
+    background-color: rgba(172, 157, 150, .75);
 }
+#res_page h3{
+    text-align: center;
+    margin: -1.25em 0 .5em 0;
+}
+#res_page div{
+    margin:1.5em 1em;
+}
+#res_page h6{
+    font-weight: 600;
+}
+#res_page p{
+     font-size:1em;
+ }
+#res_page .list-items{
+    font-size:1em;
+    line-height: 1.5em;
+}
+#res_page section{
+    margin:1.5em 1em;
+}
+
+
+/*css pertaining to education page*/
+#edu_page{
+
+}
+#edu_page h3{
+    text-align: center;
+    margin: -1.25em 0 .5em 0;
+}
+#edu_page section{
+    margin:1.5em 1em;
+}
+#edu_page h6{
+    font-weight: 600;
+}
+#edu_page p{
+    font-size: 1em;
+    margin-left: .5em;
+}
+
+/*#res_page .letters{
+    background-color: rgba(169,93,41,.25);
+    margin:6em 0;
+    padding-bottom: 1em;
+}
+.collapsible {
+    border: none;
+    padding: 0 0 1em 0;
+
+}
+#res_page .collapsible-header {
+    background-color: rgba(172, 157, 150, .75);
+    border: none;
+}*/
+
+
+/*css for the projects page*/
+#proj_page{
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+#proj_page h3{
+    margin: -1.5em .5em 0 1.5em;
+}
+#proj_page .my_work{
+    margin: 2em .25em;
+}
+
+
