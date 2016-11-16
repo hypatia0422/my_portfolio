@@ -4,16 +4,34 @@
 */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
+ /*css for main and general parts of page                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     */
 body{
 
     background-color: rgba(255,255,255,1);
-    font-family: 'Raleway', sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
 }
-/*css for nav */
+/* css for main slider nav */
+#main_page header .button-collapse{
+    background-color: rgba(228, 84, 76, .75);
+    color: #ffffff;
+    padding: .5em;
+    margin: .5em;
+    border-radius: 5px;
+
+}
+#main_page header{
+
+}
+header .m{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    font-weight: 700;
+
+}
 header nav{
     background-color:rgba(255, 82, 82, .8);
     font-size: 1.5em;
-    padding: .5em; /*this works up till 600px, then add media query*/
+    padding: .35em; /*this works up till 600px, then add media query*/
 }
 
 header nav ul#slide-out.side-nav.right-aligned li div.userView img.circle{
@@ -25,37 +43,31 @@ header nav ul#slide-out.side-nav.right-aligned li div.userView p{
     line-height: 1.25em;
     margin: .25em 0;
 }
+
+/*css for icons and button menu*/
 i{
     color:cadetblue;
 }
 
 /*Css for all containers or sections*/
-.container{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    padding: 2em .25em;
-}
-.container img{
-    width: 40%;
-    height: auto;
-    margin: .5em;
-    padding:.25em;
+/*.container{*/
+    /*display:flex;*/
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    /*align-content: flex-start;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*padding: 2em .25em;*/
+/*}*/
+/*.container img{*/
+    /*width: 40%;*/
+    /*height: auto;*/
+    /*margin: .5em;*/
+    /*padding:.25em;*/
 
-}
-p{
-    font-size: .85em;
-}
-/*overall card fixes*/
-.card-title{
-    color:#CD853F !important;
-    text-shadow: 1px 1px #444;
-}
+/*}*/
 
 /*CSS pertaining to header section*/
 header{
@@ -72,9 +84,24 @@ h1 {
     width:100%;
     height: auto;
 }
-/*Css pertaining to main section container*/
+
+#main_page h3{
+    color:rgb(215, 60, 102);
+    text-shadow: 1px 1px #444;
+    font-family: 'Dancing Script', cursive;
+    font-size:2.7em;
+    float:right;
+    margin: 0 .5em ;
+}
+#main_page h2{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin: .5em 0;
+}
+/*Css pertaining to main section cards*/
 #main{
-    background-color:rgba(250,242,231,1);
+    background-color:rgba(235, 127, 121,.5);
 }
 
 #main q{
@@ -82,21 +109,22 @@ h1 {
     font-size: 1.5em;
 }
 
-#main img {
-    /*display: inline-block;*/
-    padding: .5em .5em;
+#main .card-image{
     width: 100%;
     height: auto;
-    border-radius: 50px;
     opacity: .87;
 }
 #main img:hover{
     opacity: 1;
 }
+.card-title{
+    color:#CD853F !important;
+    text-shadow: 1px 1px #444;
+}
 
 /*CSS pertaining to the Resume and recommendations*/
 #resume{
-    background-color:rgba(255,243,242,1);
+    background-color:rgba(85, 224, 143, .25);
 
 }
 #resume:hover{
@@ -109,7 +137,7 @@ h1 {
 
 /*CSS pertaining to my projects*/
 #project{
-    background-color:rgba(109, 45, 132,.25);
+    background-color:rgba(215, 60, 102,.25);
 
 }
 #project:hover{
@@ -118,7 +146,7 @@ h1 {
 
 /*CSS pertaining to the education section*/
 #education{
-    background-color:rgba(40,40,40,.25);
+    background-color:rgba(27, 148, 77, .25);
     background-size: 100% auto;
     background-repeat: no-repeat;
     height: 100%;
@@ -131,20 +159,43 @@ h1 {
 
 /*CSS based on the community and social page*/
 #social{
-    background-color:rgba(234,228,213,1);
+    background-color:rgba(228, 84, 76, .25);
 
 }
 #social:hover{
     opacity: .6;
 }
-#footer{
-    background-color:rgba(255,243,242,1);
+
+/*css for footer section of main page*/
+#contact{
+    background-color: rgba(255, 153, 146, .8);
+    padding: .5em;
 
 }
+#contact .info{
+    font-size: 1.15em;
+    color: #ffffff;
+    margin-bottom: .5em;
+}
+#contact .info h4{
+    font-size: 1.35em;
+}
+#contact .info a{
+    color:#ffffff;
+
+}
+#contact .info a:hover{
+    color:rgb(215, 60, 102);
+}
+#contact .info i{
+    margin: .15em;
+    color: #ffffff;
+}
+
 
 /*Css for floating menu button*/
 #btn_nav .large.material-icons{
-    background-color: #444;
+    background-color: rgba(255, 82, 82, 1);
 
 }
 
@@ -189,25 +240,14 @@ h1 {
     cursor: default;
 }
 
-/*Css media queries for larger screens */
-
-@media screen and (min-width: 450px) {
-    .nav li {
-        display: inline;
-        width: 100%;
-        border-bottom: none;
-        height: auto;
-        line-height: 1.2em;
-        font-size: 1.4em;
-    }
-}
-
 /*css for the about me page*/
 #about_page{
-    background-color:rgba(169,93,41,.25) ;
+    background-color:rgba(235, 127, 121,.25) ;
 }
 
 #about h1{
+    color:rgba(235, 127, 121,1);
+    text-shadow: 1px 1px #222222;
     text-align:right;
     margin: -1em 1em .5em 1em;
 }
@@ -242,6 +282,8 @@ h1 {
     background-color: rgba(172, 157, 150, .75);
 }
 #res_page h3{
+    color:cadetblue;
+    text-shadow: 1px 1px #222222;
     text-align: center;
     margin: -1.25em 0 .5em 0;
 }
@@ -265,9 +307,11 @@ h1 {
 
 /*css pertaining to education page*/
 #edu_page{
-
+    background-color: rgba(27, 148, 77, .15);
 }
 #edu_page h3{
+    color: rgba(27, 148, 77, 1);
+    text-shadow:  1px 1px #222222;
     text-align: center;
     margin: -1.25em 0 .5em 0;
 }
@@ -302,13 +346,65 @@ h1 {
 #proj_page{
     display:flex;
     flex-flow: column nowrap;
-    align-items: center;
+    background-color: rgba(85, 224, 143, .15);
 }
 #proj_page h3{
-    margin: -1.5em .5em 0 1.5em;
+    text-align: center;
+    color:rgba(85, 224, 143, 1);
+    text-shadow: 1px 1px #222222;
+    margin: -1em 0 .25em 0;
+
+
 }
 #proj_page .my_work{
     margin: 2em .25em;
+    align-self: center;
+}
+#soc_page{
+    display:flex;
+    flex-flow: column nowrap;
+    background-color: rgba(228, 84, 76, .15);
+   }
+#soc_page section{
+    margin: .5em;
+}
+#soc_page h3{
+    color: rgba(228, 84, 76, 1);
+    text-shadow: 1px 1px #222222;
+    font-size: 2em;
+    text-align: center;
+    margin-top: -.75em;
+}
+#soc_page p{
+    font-size: 1.15em;
+    line-height: 1.45em;
+    padding:.5em;
+    margin: .25em;
+}
+#soc_page picture img{
+    padding: 1em 5em;
+    width:100%;
+    image-orientation: 90deg;
+    align-self: center;
+    border-radius: 10px;
 }
 
+/*Css media queries for larger screens */
 
+@media screen and (min-width: 600px) {
+    /*.nav li {*/
+        /*display: inline;*/
+        /*width: 100%;*/
+        /*border-bottom: none;*/
+        /*height: auto;*/
+        /*line-height: 1.2em;*/
+        /*font-size: 1.4em;*/
+    /*}*/
+    #main_page{
+        display:flex;
+        flex-flow:column nowrap;
+    }
+    #main_page .card{
+        align-self: center;
+    }
+}
