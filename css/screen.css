@@ -241,10 +241,10 @@ body{
 
 /*css pertaining to education page*/
 #edu_page{
-    background-color: rgba(27, 148, 77, .15);
+    /*background-color: rgba(27, 148, 77, .15);*/
 }
 #edu_page h3{
-    color: rgba(27, 148, 77, 1);
+    /*color: rgba(27, 148, 77, 1);*/
     text-shadow:  1px 1px #222222;
     text-align: center;
     margin: -1.25em 0 .5em 0;
@@ -256,7 +256,7 @@ body{
     font-weight: 600;
 }
 #edu_page p{
-    font-size: 1em;
+    font-size: 1.5em;
     margin-left: .5em;
 }
 
@@ -264,11 +264,11 @@ body{
 #proj_page{
     display:flex;
     flex-flow: column nowrap;
-    background-color: rgba(85, 224, 143, .15);
+    /*background-color: rgba(85, 224, 143, .15);*/
 }
 #proj_page h3{
     text-align: center;
-    color:rgba(85, 224, 143, 1);
+    /*color:rgba(85, 224, 143, 1);*/
     text-shadow: 1px 1px #222222;
     margin: -1em 0 .25em 0;
 
