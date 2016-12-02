@@ -4,94 +4,114 @@
 */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
+
+/*rgba(172, 139, 116, 1); taupe brown*/
+/*rgba(172, 157, 150, 1) taupe*/
+/*rgba(210,192,180, 1) light taupe*/
+/*rgba(181, 114, 111, 1)dark pink*/
+/*rgba(210, 170, 168, 1)lightpink*/
+/*rgba(240, 210, 209, 1)lightest pink*/
+/*rgba(31, 156, 148, 1)dark Tiffany*/
+/*rgba(73, 201, 200, 1) tiffany blue*/
+/*rgba(170, 232, 227, 1)light blue*/
+/*rgba(245, 241, 235, 1) ivory */
  /*css for main and general parts of page                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     */
 body{
 
     background-color: rgba(255,255,255,.75);
     font-family: 'Open Sans Condensed', sans-serif !important;
 }
-/* css for main slider nav */
-#main_page header .button-collapse{
-    background-color: rgba(0, 0, 0, .85);
+
+
+/* css for main page slider navigation */
+.button-collapse{  /*css for the button for nav on the main page*/
+    background-color: rgba(210, 170, 168, 1);
     color: #ffffff;
-    padding: .5em;
-    margin: .5em;
+    padding:.25em ;
+    margin: 1em .5em;
     border-radius: 5px;
-
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    font-weight: 700;
 }
-#main_page header{
 
-}
-#main_page header .m{
+#main_page header .m{   /*css for the button for nav on the main page*/
     font-family: 'Dancing Script', cursive;
     font-size: 1.5em;
     font-weight: 700;
 
 }
-#main_page header nav{
-    font-size: 1.5em;
-    padding: .35em; /*this works up till 600px, then add media query*/
-}
+/*#main_page header nav{*/
+    /*font-size: 1.5em;*/
+    /*padding: .35em; !*this works up till 600px, then add media query*!*/
+/*}*/
 
-#main_page header nav ul#slide-out.side-nav.right-aligned li div.userView img.circle{
-    margin:.15em;
+.userView img.circle{  /*my pic*/
+
+
 }
-#main_page header nav ul#slide-out.side-nav.right-aligned li div.userView p{
+.userView h4{    /*name and email*/
     font-family: 'Dancing Script', cursive;
     font-size: 1.5em;
-    /*line-height: 1.25em;*/
-    margin: .25em 0;
+    margin: 2em 0;
+
 }
-.userView img{
+.userView img{   /*background flower pic*/
     width:100%;
     height: auto;
+
 }
+
+.navList a{
+   font-size: 1.5em;
+}
+/*This is for the header part on Main page the says welcome and my name*/
+#main_page h2{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:2em;
+    text-align: center;
+    margin: .5em 0;
+}
+#main_page h3{
+    /*color:rgb(215, 60, 102);*/
+    /*text-shadow: 1px 1px #444;*/
+    font-family: 'Dancing Script', cursive;
+    font-size:1.75em;
+    float:right;
+    margin: 0 .5em ;
+}
+
 
 /*Css for all containers or sections*/
 /*.container{*/
-    /*display:flex;*/
-    /*flex-direction: row;*/
-    /*flex-wrap: wrap;*/
-    /*align-content: flex-start;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*width: 100%;*/
-    /*height: auto;*/
-    /*padding: 2em .25em;*/
+/*display:flex;*/
+/*flex-direction: row;*/
+/*flex-wrap: wrap;*/
+/*align-content: flex-start;*/
+/*justify-content: center;*/
+/*align-items: center;*/
+/*width: 100%;*/
+/*height: auto;*/
+/*padding: 2em .25em;*/
 /*}*/
 /*.container img{*/
-    /*width: 40%;*/
-    /*height: auto;*/
-    /*margin: .5em;*/
-    /*padding:.25em;*/
+/*width: 40%;*/
+/*height: auto;*/
+/*margin: .5em;*/
+/*padding:.25em;*/
 
 /*}*/
 
 /*CSS pertaining to header section*/
 /*header{*/
-    /*padding: .25em;*/
-    /*margin: .5em;*/
+/*padding: .25em;*/
+/*margin: .5em;*/
 /*}*/
 /*h1 {*/
-    /*font-family: 'Open Sans Condensed', sans-serif;*/
-    /*font-size: 2.75em;*/
-    /*font-weight: bold;*/
+/*font-family: 'Open Sans Condensed', sans-serif;*/
+/*font-size: 2.75em;*/
+/*font-weight: bold;*/
 /*}*/
-/*This is for the header part on Main page the says welcome and my name*/
-#main_page h3{
-    /*color:rgb(215, 60, 102);*/
-    /*text-shadow: 1px 1px #444;*/
-    font-family: 'Dancing Script', cursive;
-    font-size:1.5em;
-    float:right;
-    margin: 0 .5em ;
-}
-#main_page h2{
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size:1.5em;
-    text-align: center;
-    margin: .5em 0;
-}
 /*Css pertaining to main section cards*/
 #main{
     /*background-color:rgba(235, 127, 121,.5);*/
@@ -105,10 +125,9 @@ body{
 #main .card-image{
     width: 100%;
     height: auto;
-    opacity: .87;
 }
 #main img:hover{
-    opacity: 1;
+    opacity: .8;
 }
 .card-title{
     /*color:#CD853F !important;*/
@@ -120,8 +139,11 @@ body{
     /*background-color:rgba(85, 224, 143, .25);*/
 
 }
+#resume img{
+    width:100%;
+}
 #resume:hover{
-    opacity: .6;
+    opacity: .8;
 }
 
 /*CSS pertaining to my projects*/
@@ -130,7 +152,7 @@ body{
 
 }
 #project:hover{
-    opacity: .6;
+    opacity: .8;
 }
 
 /*CSS pertaining to the education section*/
@@ -143,7 +165,7 @@ body{
 
 }
 #education:hover{
-    opacity: .6;
+    opacity: .8;
 }
 
 /*css for footer section of main page*/
@@ -165,7 +187,7 @@ body{
 
 }
 #contact .info a:hover{
-    color:rgb(215, 60, 102);
+    color:rgba(245, 241, 235, 1);
 }
 #contact .info i{
     margin: .15em;
@@ -173,6 +195,7 @@ body{
 }
 
 /*Css creating nav for each page*/
+/*
 .nav {
     background-color: #444;
     width:100%;
@@ -211,43 +234,41 @@ body{
     color: rgba(172, 157, 150, 1);
     cursor: default;
 }
-
+*/
 /*css for resume sheet*/
+#res_page .button-collapse{
+
+}
 #res_page {
-    background-color: rgba(172, 157, 150, .75);
+    background-color: rgba(245, 241, 235, 1);
 }
 #res_page h3 {
-    color: cadetblue;
-    text-shadow: 1px 1px #222222;
+    color: rgba(31, 156, 148, 1);
+    text-shadow: .3px .3px #222222;
     text-align: center;
 }
 #res_page div{
-    margin:1.5em 1em;
+    margin:1em 1em;
 }
 #res_page h6{
+    font-size: 1.25em;
     font-weight: 600;
 }
-#res_page p{
-     font-size:1em;
- }
-#res_page .list-items{
-    font-size:1em;
+#res_page .list-items p{
+    font-size:1.25em;
     line-height: 1.5em;
 }
 #res_page section{
     margin:1.5em 1em;
 }
-
-
 /*css pertaining to education page*/
 #edu_page{
     /*background-color: rgba(27, 148, 77, .15);*/
 }
 #edu_page h3{
-    /*color: rgba(27, 148, 77, 1);*/
-    text-shadow:  1px 1px #222222;
+    color: rgba(31, 156, 148, 1);
+    text-shadow: .3px .3px #222222;
     text-align: center;
-    margin: -1.25em 0 .5em 0;
 }
 #edu_page section{
     margin:1.5em 1em;
@@ -267,10 +288,9 @@ body{
     /*background-color: rgba(85, 224, 143, .15);*/
 }
 #proj_page h3{
+    color: rgba(31, 156, 148, 1);
+    text-shadow: .3px .3px #222222;
     text-align: center;
-    /*color:rgba(85, 224, 143, 1);*/
-    text-shadow: 1px 1px #222222;
-    margin: -1em 0 .25em 0;
 
 
 }
