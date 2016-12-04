@@ -42,10 +42,6 @@ body{
     font-weight: 700;
 
 }
-/*#main_page header nav{*/
-    /*font-size: 1.5em;*/
-    /*padding: .35em; !*this works up till 600px, then add media query*!*/
-/*}*/
 
 .userView img.circle{  /*my pic*/
 
@@ -165,7 +161,7 @@ body{
     text-shadow: .3px .3px #222222;
     text-align: center;
 }
-#res_page div{
+#res_page section div{
     margin:1em 1em;
 }
 #res_page h6{
