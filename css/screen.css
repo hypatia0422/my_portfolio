@@ -198,7 +198,7 @@ body{
 }
 #edu_page h3{
     display: block;
-    color: rgba(200, 136, 130, 1);
+    color: rgba(172, 139, 116, 1);
     text-shadow: .3px .3px #222222;
     text-align: center;
 }
@@ -215,7 +215,7 @@ body{
 
 /*css for the projects page*/
 #proj_page .button-collapse{
-    background-color: rgba(220, 160, 158, 1);
+    background-color: rgba(210, 170, 168, 1);
 }
 #proj_page{
     display:flex;
@@ -225,12 +225,16 @@ body{
     color: rgba(181, 114, 111, 1);
     text-shadow: .3px .3px #222222;
     text-align: center;
-
-
 }
+
 #proj_page .my_work{
     margin: 2em .25em;
     align-self: center;
+}
+#proj_page p{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: .25em 2em;
 }
 
 /*Css media queries for larger screens */
@@ -243,21 +247,27 @@ body{
         flex-flow: row wrap;
         justify-content: center;
 
-        background-color: rgba(181, 114, 111, 1);
+        background-color: rgba(210, 170, 168, 1);
         font-size-adjust: .5;
         padding: .5em .75em;
         box-shadow:1px 1px rgba(43, 43, 43, .25);
     }
-    .arrow{
-        visibility: visible;
-    }
+
     #greeting{
         font-size: 2em;
         margin-bottom: 3em;
     }
-    .card{
-        width: 170%
+    #main_page{
+        display:flex;
+        flex-flow: column nowrap;
+        justify-content: center;
     }
+    .card{
+        align-self:center;
+        width: 125%;
+        margin:auto;
+    }
+
 
     #res_page{
 
@@ -278,16 +288,6 @@ body{
 
 }
 
-@media screen and (min-width: 601px) and (max-width: 1049px) {
-    /* for tablets*/
-    body {
-
-        background: rgba(240, 210, 209, .45);
-        background: -moz-linear-gradient(top, rgba(210, 170, 168, .45) 0%, rgba(240, 210, 209, .45) 32%, rgba(210, 192, 180, .45) 75%, rgba(172, 157, 150, .45) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(210, 170, 168, .45) 0%, rgba(240, 210, 209, .45) 32%, rgba(210, 192, 180, .45) 75%, rgba(172, 157, 150, .45) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(210, 170, 168, .45) 0%, rgba(240, 210, 209, .45) 32%, rgba(210, 192, 180, .45) 75%, rgba(172, 157, 150, .45) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    }
-}
 
 @media screen and (min-width: 1050px) {
     /*for desktops*/
