@@ -81,46 +81,7 @@ body{
     font-size:1.75em;
     float:right;
     margin: 0 .5em ;
-
 }
-
-.arrow{
-    margin: 0 45%;
-    position: fixed;
-    bottom: 0;
-
-
-    animation: bounce 2s ease-out 3s infinite alternate;
-}
-
-@keyframes bounce {
-    from, 20%, 53%, 80%, to {
-        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-
-    40%, 43% {
-        -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-        -webkit-transform: translate3d(0, -30px, 0);
-        transform: translate3d(0, -30px, 0);
-    }
-
-    70% {
-        -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-        -webkit-transform: translate3d(0, -15px, 0);
-        transform: translate3d(0, -15px, 0);
-    }
-
-    90% {
-        -webkit-transform: translate3d(0, -4px, 0);
-        transform: translate3d(0, -4px, 0);
-    }
-}
-
 
 /*Css pertaining to main section cards*/
 #main{
@@ -151,6 +112,8 @@ body{
 #project:hover{
     opacity: .8;
 }
+
+
 
 /*CSS pertaining to the education section*/
 #education{
@@ -193,12 +156,22 @@ body{
 /*css for resume sheet*/
 
 #res_page {
+    display: flex;
+    flex-flow: column nowrap;
+
+
     background-color: rgba(239, 239, 239, 1);
 }
 #res_page h3 {
+    display: block;
     color: rgba(31, 156, 148, 1);
     text-shadow: .3px .3px #222222;
     text-align: center;
+}
+
+#res_page section{
+
+    text-align: left;
 }
 #res_page section div{
     margin:1em 1em;
@@ -216,15 +189,21 @@ body{
 }
 /*css pertaining to education page*/
 #edu_page{
-    background-color: rgba(239, 239, 239, 1);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#edu_page .button-collapse{
+    background-color: rgba(172, 157, 150, 1);
 }
 #edu_page h3{
-    color: rgba(31, 156, 148, 1);
+    display: block;
+    color: rgba(200, 136, 130, 1);
     text-shadow: .3px .3px #222222;
     text-align: center;
 }
 #edu_page section{
-    margin:1.5em 1em;
+    margin:1.5em 3em;
 }
 #edu_page h6{
     font-weight: 600;
@@ -235,12 +214,15 @@ body{
 }
 
 /*css for the projects page*/
+#proj_page .button-collapse{
+    background-color: rgba(220, 160, 158, 1);
+}
 #proj_page{
     display:flex;
     flex-flow: column nowrap;
 }
 #proj_page h3{
-    color: rgba(31, 156, 148, 1);
+    color: rgba(181, 114, 111, 1);
     text-shadow: .3px .3px #222222;
     text-align: center;
 
@@ -341,6 +323,9 @@ body{
         color: rgba(73, 201, 200, 1);
         text-align: center;
     }
+    #greeting h3{
+        margin-right: 4em;
+    }
 
     .arrow{
         display: none;
@@ -356,7 +341,10 @@ body{
     }
     #contact{
         width: 100%;
-        background-color: rgba(73, 201, 200, .8);
+        background: rgba(73, 201, 200, 1);
+        /*background: -moz-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(73, 201, 200, .33) 32%, rgba(73, 201, 200, .66) 75%, rgba(73, 201, 200, 1) 100%); !* FF3.6-15 *!*/
+        /*background: -webkit-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(73, 201, 200, .33) 32%, rgba(73, 201, 200, .66) 75%, rgba(73, 201, 200, 1) 100%); !* Chrome10-25,Safari5.1-6 *!*/
+        /*background: linear-gradient(to bottom, rgba(250,250,250,1) 0%, rgba(73, 201, 200, .33) 32%, rgba(73, 201, 200, .66) 75%, rgba(73, 201, 200, 1) 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
 
     }
 }
