@@ -11,10 +11,11 @@
   <link href="css/screen.css" rel="stylesheet">
   <title> My Digital Portfolio </title>
 
+
 </head>
 <body id="main_page">
    <!--Section that creates menu in top main window-->
-  <header>
+  <header class=" ">
     <a href="#" data-activates="slide-out" class="button-collapse m"> Menu</a>
     <ul id="slide-out" class="side-nav">
       <li><div class="userView">
@@ -27,108 +28,128 @@
       <li class="navList project"><a href="projects.html">Projects</a></li>
       <li class="navList education"><a href="education.html"> Education</a></li>
     </ul>
+
   </header>
+
+   <div id="altHeader">
+     <nav>
+       <div class="nav-wrapper">
+         <a href="index.html" class="brand-logo left"></a>
+         <ul class="right hide-on-med-and-down">
+           <li><a href="resume.html">Work Experience</a></li>
+           <li><a href="projects.html">Projects</a></li>
+           <li><a href="education.html">Education</a></li>
+           <li class="active"><a href="index.html">Home</a></li>
+         </ul>
+       </div>
+     </nav>
+   </div>
+
    <!--section that creates title and header for top of main page-->
-   <section>
+   <section id="greeting" >
      <h2>Welcome to my page...</h2>
      <h3>Marilyn Barrios </h3>
    </section>
 
-   <!--Creates main card-->
- <section id="main" class=" z-depth-3">
-   <div class="row">
-     <div class="col s12 m7">
-       <div class="card">
-         <div class="card-image">
-           <img src="images/mb.jpg">
-         </div>
-         <div class="card-content">
-           <p>My Favorite Quote</p>
-           <q>"The Unexamined life is not worth living."</q>
-           <p>-Socrates</p>
-         </div>
 
-       </div>
-     </div>
-   </div>
-</section>
-   <!--Creates Work Experience section -->
-<section id="resume" class=" z-depth-3">
-  <div class="row">
-    <div class="col s12 m7">
-      <div class="card">
-        <div class="card-image">
-          <img src="images/work.jpg">
+  <!--Creates main card-->
+  <section id="main"  class="flexItem">
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/mb.jpg">
+          </div>
+          <div class="card-content">
+            <p>My Favorite Quote</p>
+            <q>"The Unexamined life is not worth living."</q>
+            <p>-Socrates</p>
+
+          </div>
         </div>
-        <div class="card-content">
-          <p>My Work Experience</p>
-        </div>
-        <div class="card-action">
-          <a href="resume.html">My Resume</a>
+      </div>
+      <img class="arrow bounce " src="images/arrleft.png">
+    </div>
+  </section>
+  <!--Creates Work Experience section -->
+  <section id="resume" class="flexItem">
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/work.jpg">
+          </div>
+          <div class="card-content">
+            <p>My Work Experience</p>
+          </div>
+          <div class="card-action">
+            <a href="resume.html">My Resume</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-   <!--Creates section for My Projects card-->
-    <section id="project" class="z-depth-3">
+  <!--Creates section for My Projects card-->
+  <section id="project" class="flexItem" >
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/git1.jpg">
+          </div>
+          <div class="card-content">
+            <p>My Project Portfolio</p>
+          </div>
+          <div class="card-action">
+            <a href="projects.html"> See my projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Creates section for Education card-->
+  <section id="education" class="flexItem">
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/edu1.jpg">
+          </div>
+          <div class="card-content">
+            <q>"The beautiful thing about education is that no one can take it from you..."</q>
+          </div>
+          <div class="card-action">
+            <a href="education.html"> My Education</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Creates footer section-->
+  <footer id="contact" class="page-footer" >
+    <div class="container">
       <div class="row">
-        <div class="col s12 m7">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/git1.jpg">
-            </div>
-            <div class="card-content">
-              <p>My Project Portfolio</p>
-            </div>
-            <div class="card-action">
-              <a href="projects.html"> See my projects</a>
-            </div>
-          </div>
+        <div class="col l6 s12 info">
+          <h4>Contact Information</h4>
+          <p>Marilyn Barrios</p>
+          <p>phone &#9900 312-532-4042</p>
+          <p>email &#9900 mbarrios0422@gmail.com</p>
+        </div>
+        <div class="col l4 offset-l2 s12 info">
+          <h4>Visit Me</h4>
+          <ul>
+            <li><a class="footerLinks" href="https://www.linkedin.com/in/marilyn22"><i class="fa fa-linkedin-square"></i> My LinkedIn </a></li>
+            <li><a class="footerLinks" href="https://github.com/hypatia0422"><i class="fa fa-github-square"></i> My GitHub</a></li>
+            <li><a class="footerLinks" href="http://codepen.io/hypatia0422/#"><i class="fa fa-codepen"> </i>My CodePen</a></li>
+          </ul>
         </div>
       </div>
-    </section>
-   <!--Creates section for Education card-->
-    <section id="education" class=" z-depth-3">
-      <div class="row">
-        <div class="col s12 m7">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/edu1.jpg">
-            <div class="card-content">
-              <q>"The beautiful thing about education is that no one can take it from you..."</q>
-            </div>
-            <div class="card-action">
-              <a href="education.html"> My Education</a>
-            </div>
-            </div>
-        </div>
-       </div>
-      </div>
-    </section>
-   <!--Creates footer section-->
-    <footer id="contact" class="page-footer" >
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12 info">
-            <h4>Contact Information</h4>
-            <p>Marilyn Barrios</p>
-            <p>phone &#9900 312-532-4042</p>
-            <p>email &#9900 mbarrios0422@gmail.com</p>
-          </div>
-          <div class="col l4 offset-l2 s12 info">
-            <h4>Visit Me</h4>
-            <ul>
-              <li><a class="footerLinks" href="https://www.linkedin.com/in/marilyn22"><i class="fa fa-linkedin-square"></i> My LinkedIn </a></li>
-              <li><a class="footerLinks" href="https://github.com/hypatia0422"><i class="fa fa-github-square"></i> My GitHub</a></li>
-              <li><a class="footerLinks" href="http://codepen.io/hypatia0422/#"><i class="fa fa-codepen"> </i>My CodePen</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
+
+ <script>$(img).fadeToggle(speed,easing,callback)</script>
  <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
  <script type="text/javascript" src="js/materialize.js"></script>
 </body>

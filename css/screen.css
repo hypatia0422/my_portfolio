@@ -6,11 +6,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 
 /*rgba(172, 139, 116, 1); taupe brown*/
+
 /*rgba(172, 157, 150, 1) taupe*/
 /*rgba(210,192,180, 1) light taupe*/
+
 /*rgba(181, 114, 111, 1)dark pink*/
+
 /*rgba(210, 170, 168, 1)lightpink*/
 /*rgba(240, 210, 209, 1)lightest pink*/
+
 /*rgba(31, 156, 148, 1)dark Tiffany*/
 /*rgba(73, 201, 200, 1) tiffany blue*/
 /*rgba(170, 232, 227, 1)light blue*/
@@ -18,7 +22,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /*rgba(239, 239, 239, 1) light white*/
  /*css for main and general parts of page                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     */
 body{
-
     background-color: rgba(239, 239, 239, 1);
     font-family: 'Open Sans Condensed', sans-serif !important;
 }
@@ -36,11 +39,13 @@ body{
     font-weight: 700;
 }
 
+#altHeader{
+    display: none;
+}
 #main_page header .m{   /*css for the button for nav on the main page*/
     font-family: 'Dancing Script', cursive;
     font-size: 1.5em;
     font-weight: 700;
-
 }
 
 .userView img.circle{  /*my pic*/
@@ -60,7 +65,7 @@ body{
 }
 
 .navList a{
-   font-size: 1.5em;
+   font-size: 1.25em;
 }
 /*This is for the header part on Main page the says welcome and my name*/
 #main_page h2{
@@ -68,16 +73,53 @@ body{
     font-size:2em;
     text-align: center;
     margin: .5em 0;
+
 }
+
 #main_page h3{
-    /*color:rgb(215, 60, 102);*/
-    /*text-shadow: 1px 1px #444;*/
     font-family: 'Dancing Script', cursive;
     font-size:1.75em;
     float:right;
     margin: 0 .5em ;
+
 }
 
+.arrow{
+    margin: 0 45%;
+    position: fixed;
+    bottom: 0;
+
+
+    animation: bounce 2s ease-out 3s infinite alternate;
+}
+
+@keyframes bounce {
+    from, 20%, 53%, 80%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40%, 43% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+    }
+
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0);
+        transform: translate3d(0, -4px, 0);
+    }
+}
 
 
 /*Css pertaining to main section cards*/
@@ -93,9 +135,6 @@ body{
 #main .card-image{
     width: 100%;
     height: auto;
-}
-#main img:hover{
-    opacity: .8;
 }
 
 /*CSS pertaining to the Resume and recommendations*/
@@ -143,7 +182,7 @@ body{
 
 }
 #contact .info a:hover{
-    color:rgba(239, 239, 239, 1);
+    color:rgba(219, 219, 219, 1);
 }
 #contact .info i{
     margin: .15em;
@@ -214,20 +253,110 @@ body{
 
 /*Css media queries for larger screens */
 
-@media screen and (min-width: 600px) {
-    /*.nav li {*/
-        /*display: inline;*/
-        /*width: 100%;*/
-        /*border-bottom: none;*/
-        /*height: auto;*/
-        /*line-height: 1.2em;*/
-        /*font-size: 1.4em;*/
-    /*}*/
-    #main_page{
-        display:flex;
-        flex-flow:column nowrap;
+@media screen and (min-width: 601px) {
+    /* for tablets*/
+
+    .button-collapse{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        background-color: rgba(181, 114, 111, 1);
+        font-size-adjust: .5;
+        padding: .5em .75em;
+        box-shadow:1px 1px rgba(43, 43, 43, .25);
     }
-    #main_page .card{
-        align-self: center;
+    .arrow{
+        visibility: visible;
+    }
+    #greeting{
+        font-size: 2em;
+        margin-bottom: 3em;
+    }
+    .card{
+        width: 170%
+    }
+
+    #res_page{
+
+        font-size: 115%;
+    }
+    #res_page .button-collapse{
+       background-color: rgba(73, 201, 200, 1);
+    }
+
+    #res_page section{
+        margin-left: 10%;
+    }
+    #res_page h3{
+        color: rgba(51, 176, 158,1);
+        font-size: 3em;
+        font-weight: 600;
+    }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1049px) {
+    /* for tablets*/
+    body {
+
+        background: rgba(240, 210, 209, .45);
+        background: -moz-linear-gradient(top, rgba(210, 170, 168, .45) 0%, rgba(240, 210, 209, .45) 32%, rgba(210, 192, 180, .45) 75%, rgba(172, 157, 150, .45) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(210, 170, 168, .45) 0%, rgba(240, 210, 209, .45) 32%, rgba(210, 192, 180, .45) 75%, rgba(172, 157, 150, .45) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(210, 170, 168, .45) 0%, rgba(240, 210, 209, .45) 32%, rgba(210, 192, 180, .45) 75%, rgba(172, 157, 150, .45) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    /*for desktops*/
+    body {
+        background-color: rgba(250,250,250,1);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    header {
+        display: none;
+    }
+
+    #altHeader {
+        display: block;
+        width: 100%;
+        height:auto;
+    }
+
+    #altHeader nav li a{
+        font-size: 1.5em;
+    }
+
+    #altHeader nav{
+        background-color: rgba(10,10,10,.5);
+
+
+    }
+
+    #greeting {
+        width: 100%;
+        color: rgba(73, 201, 200, 1);
+        text-align: center;
+    }
+
+    .arrow{
+        display: none;
+    }
+    #main_page .flexItem{
+        width: 40%;
+        height:auto;
+    }
+
+
+    #main_page .flexItem .card-image img{
+        background-image: url("images/me.JPG");
+    }
+    #contact{
+        width: 100%;
+        background-color: rgba(73, 201, 200, .8);
+
     }
 }
